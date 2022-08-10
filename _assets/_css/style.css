@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: #fff;
+  margin: 20px 0;
+}
+
+.search {
+  display: flex;
+  width: 300px;
+}
+
+.search #searchInput {
+  flex: 1;
+  padding: 10px;
+  outline: none;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 0;
+}
+
+.search button {
+  padding: 10px;
+  font-size: 15px;
+  border: 0;
+  background-color: #555;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.search button:hover {
+  background-color: #444;
+}
+
+.result {
+  width: 400px;
+  display: none;
+  border: 1px dotted #fff;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  width: 100%;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+}
+
+.info {
+  display: flex;
+  width: 100%;
+}
+
+.info .temp {
+  flex: 1;
+  text-align: center;
+}
+
+.info .rightArea {
+  flex: 1;
+  text-align: center;
+}
+
+.tempTitle,
+.windTitle,
+.humidityTitle {
+  color: #777;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.tempInfo,
+.windInfo,
+.humidityInfo {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.tempDay {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.tempMax,
+.tempMin {
+  display: flex;
+  flex-direction: column;
+  color: #777;
+}
+
+.tempMax span,
+.tempMin span {
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.tempMax sup,
+.tempMin sup {
+  font-size: 10px;
+  font-weight: normal;
+}
+
+.tempInfo sup {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.imgSubtitle {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.windInfo span,
+.humidityInfo span {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.windArea {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 20px;
+  padding-left: 25px;
+  padding-top: 25px;
+  margin-bottom: 20px;
+}
+
+.windPonto {
+  transform: rotate(0deg);
+  width: 15px;
+  height: 1px;
+  background-color: #fff;
+  transform-origin: left;
+}
+
+.warning {
+  color: #fff;
+  padding-top: 20px;
+}
+
+footer {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 13px;
+}
